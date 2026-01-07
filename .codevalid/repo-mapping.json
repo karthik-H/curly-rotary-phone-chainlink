@@ -1,0 +1,17 @@
+{
+  "chainlink_functions_integration": {
+    "implementation": [],
+    "missing_implementations": [
+      "Off-chain data must be executed securely.",
+      "External data fetching or computation must be deterministic.",
+      "Results must be encoded and returned to a smart contract.",
+      "Results must be stored and exposed on-chain."
+    ]
+  },
+  "mint_token_on_data": {
+    "implementation": [],
+    "missing_implementations": [
+      "Token minting occurs only after data is available on-chain."
+    ]
+  }
+}
