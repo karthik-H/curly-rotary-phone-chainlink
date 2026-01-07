@@ -79,8 +79,72 @@
       "suggestion": "If a user interface is planned, specify how users interact with the system, view results, and initiate actions.",
       "priority": "Medium",
       "rationale": "UI/UX details are needed for a complete end-to-end implementation and user testing."
+    },
+    {
+      "skill_name": "architecture",
+      "category": "Technical Specification",
+      "breakdown_id": "general",
+      "suggestion": "Specify the framework and libraries to be used for both the smart contract (e.g., Solidity version, Hardhat/Foundry/Truffle) and the off-chain Typescript code (e.g., Node.js version, Chainlink Functions SDK).",
+      "priority": "High",
+      "rationale": "Developers need to know the exact tools and versions to ensure compatibility and reproducibility."
+    },
+    {
+      "skill_name": "architecture",
+      "category": "Authentication/Authorization",
+      "breakdown_id": "chainlink_functions_integration",
+      "suggestion": "Clarify how the off-chain execution environment is secured and authenticated, including how API keys or secrets are managed if external APIs are used, even if mocked.",
+      "priority": "High",
+      "rationale": "Security of off-chain execution and data integrity is critical, especially when integrating with smart contracts."
+    },
+    {
+      "skill_name": "architecture",
+      "category": "Data Storage",
+      "breakdown_id": "chainlink_functions_integration",
+      "suggestion": "Define the on-chain storage structure for the fetched/computed data (e.g., mapping, struct, event logs), including data types and access patterns.",
+      "priority": "High",
+      "rationale": "Smart contract storage must be explicitly defined to avoid ambiguity and ensure correct data retrieval."
+    },
+    {
+      "skill_name": "architecture",
+      "category": "UI/UX Design Considerations",
+      "breakdown_id": "general",
+      "suggestion": "Clarify if there is any user interface for triggering the off-chain data fetch or minting process, or if all interactions are via scripts or smart contract calls.",
+      "priority": "Medium",
+      "rationale": "Knowing how users interact with the system affects how the workflow and error handling are designed."
+    },
+    {
+      "skill_name": "architecture",
+      "category": "User Flow",
+      "breakdown_id": "mint_token_on_data",
+      "suggestion": "Describe the step-by-step flow from data request, off-chain processing, result submission, to token minting, including who initiates each step and how failures are handled.",
+      "priority": "High",
+      "rationale": "A clear user flow is essential to avoid implementation gaps and ensure a seamless process."
+    },
+    {
+      "skill_name": "architecture",
+      "category": "Error Handling & Resilience",
+      "breakdown_id": "chainlink_functions_integration",
+      "suggestion": "Specify what should happen if off-chain data fetching or computation fails (e.g., retries, error events, user notification).",
+      "priority": "Medium",
+      "rationale": "Handling failures gracefully is important for reliability and user trust."
+    },
+    {
+      "skill_name": "architecture",
+      "category": "Integration Feature",
+      "breakdown_id": "chainlink_functions_integration",
+      "suggestion": "Clarify if the Chainlink Functions integration should be designed for mainnet deployment in the future, or if it is strictly for Sepolia testnet.",
+      "priority": "Low",
+      "rationale": "This affects how secrets, gas costs, and upgradeability are considered."
+    },
+    {
+      "skill_name": "architecture",
+      "category": "Data Modeling",
+      "breakdown_id": "chainlink_functions_integration",
+      "suggestion": "Define the expected format and schema of the external data (even if mocked), including field names, types, and encoding method.",
+      "priority": "Medium",
+      "rationale": "Precise data modeling prevents integration errors and ensures correct encoding/decoding."
     }
   ],
-  "last_updated": "2026-01-07T02:29:41.963362",
+  "last_updated": "2026-01-07T02:32:54.475609",
   "version": "1.0"
 }
