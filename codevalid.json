@@ -10,7 +10,7 @@
         "Results must be encoded and returned to a smart contract.",
         "Results must be stored and exposed on-chain."
       ],
-      "change_status": "new"
+      "change_status": ""
     },
     {
       "id": "mint_token_on_data",
@@ -19,9 +19,9 @@
       "conditions": [
         "Token minting occurs only after data is available on-chain."
       ],
-      "change_status": "new"
+      "change_status": ""
     }
   ],
-  "last_updated": "2026-01-07T02:29:22.686664",
+  "last_updated": "2026-01-07T02:32:35.541054",
   "version": "1.0"
 }
