@@ -8,3 +8,6 @@ Build a fully working Chainlink Functions integration that:
 
 our test net- sepolia and our wallet is metamask.
 write a simple smart contract mint the token once it has data.
+
+programing language : typescript
+the external data can be mocked in the program.
